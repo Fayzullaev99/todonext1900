@@ -1,0 +1,117 @@
+/* INFO */
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 65px;
+    margin-bottom: 25px;
+}
+
+.info__box {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.info__title {
+    color: rgb(78, 168, 222);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+}
+
+.info__number {
+    color: rgb(217, 217, 217);
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 15px;
+    padding: 2px 8px;
+    border-radius: 50%;
+    background: rgb(51, 51, 51);
+}
+
+/* TODOS */
+
+.todos {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.todos__item {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid rgb(51, 51, 51);
+    border-radius: 8px;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.06);
+    background: rgb(38, 38, 38);
+    padding: 16px;
+    gap: 18px;
+}
+
+.todos__complete {
+    width: 17px;
+    height: 17px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: none;
+    background: rgb(38, 38, 38);
+}
+
+.todos__text {
+    color: rgb(242, 242, 242);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.todos__text_active {
+    color: rgb(128, 128, 128);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 140%;
+    text-decoration-line: line-through;
+}
+.todos__button{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.todos__edit,.todos__delete{
+    width: 17px;
+    height: 17px;
+    border: none;
+    background: rgb(38, 38, 38);
+    cursor: pointer;
+}
+.todos__edit img,.todos__delete img{
+    width: 100%;
+    height: 100%;
+}
+
+/* LOADER */
+
+.loader {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader__spinner {
+    width: 50px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background:
+        radial-gradient(farthest-side, rgb(78, 168, 222) 94%, #0000) top/8px 8px no-repeat,
+        conic-gradient(#0000 30%, rgb(78, 168, 222));
+    -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 8px), #000 0);
+    animation: l13 1s infinite linear;
+}
+
+@keyframes l13 {
+    100% {
+        transform: rotate(1turn)
+    }
+}
