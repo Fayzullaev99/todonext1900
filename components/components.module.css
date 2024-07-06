@@ -73,21 +73,46 @@
     line-height: 140%;
     text-decoration-line: line-through;
 }
-.todos__button{
+
+.todos__button {
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
-.todos__edit,.todos__delete{
+
+.todos__edit,
+.todos__delete {
     width: 17px;
     height: 17px;
     border: none;
     background: rgb(38, 38, 38);
     cursor: pointer;
 }
-.todos__edit img,.todos__delete img{
+
+.todos__edit img,
+.todos__delete img {
     width: 100%;
     height: 100%;
+}
+
+/* EMPTY */
+
+.empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    border-top: 1px solid rgb(51, 51, 51);
+    border-radius: 8px;
+    padding: 64px 24px;
+}
+
+.empty__info {
+    color: rgb(128, 128, 128);
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
 }
 
 /* LOADER */

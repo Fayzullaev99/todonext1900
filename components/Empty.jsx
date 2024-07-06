@@ -7,7 +7,7 @@ const Empty = () => {
     <div className={styles.empty}>
       <Image src={empty} alt='empty' className={styles.empty__image} />
       <div className={styles.empty__info}>
-        <h3>You don't have tasks registered yet</h3>
+        <h3>You don&apos;t have tasks registered yet</h3>
         <p>Create tasks and organize your to-do items</p>
       </div>
     </div>
